@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(dumpList(addTwoNumbers(l1, l2)))
 }
 
+// O(n)
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	n1, n2 := l1, l2
 	var out *ListNode
