@@ -3,9 +3,9 @@ package main
 import "testing"
 
 func TestRomanToInteger(t *testing.T) {
-	tcs := []struct{
+	tcs := []struct {
 		inRoman string
-		outInt int
+		outInt  int
 	}{
 		{"III", 3},
 		{"IV", 4},

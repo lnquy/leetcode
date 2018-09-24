@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestLengthOfLongestSubstring(t *testing.T) {
-	tcs := []struct{
-		inStr string
+	tcs := []struct {
+		inStr     string
 		outLength int
 	}{
 		{"abcabcbb", 3},
@@ -19,7 +19,7 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 		{"Given a string, find the length of the longest substring without repeating characters.", 10},
 	}
 
-	for idx, tc :=range tcs {
+	for idx, tc := range tcs {
 		out := lengthOfLongestSubstring(tc.inStr)
 		if out != tc.outLength {
 			t.Errorf("%d. lengthOfLongestSubstring(%q) = %d. Expected: %d", idx, tc.inStr, out, tc.outLength)

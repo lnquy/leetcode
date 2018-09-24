@@ -18,7 +18,7 @@ func lengthOfLongestSubstring(s string) int {
 			lastDupIdx = max(lastDupIdx, idx)
 		}
 
-		length = max(length, i - lastDupIdx)
+		length = max(length, i-lastDupIdx)
 		m[string(v)] = i
 	}
 	return length

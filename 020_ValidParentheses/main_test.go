@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestIsValidParentheses(t *testing.T) {
-	tcs := []struct{
-		inStr string
+	tcs := []struct {
+		inStr      string
 		outIsValid bool
 	}{
 		{"()", true},

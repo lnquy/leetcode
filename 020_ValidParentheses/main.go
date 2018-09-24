@@ -16,7 +16,7 @@ func isValid(s string) bool {
 	for _, r := range s {
 		l := len(ps)
 		switch r {
-		case '(','[', '{':
+		case '(', '[', '{':
 			ps = append(ps, r)
 		case ')':
 			if l == 0 || ps[l-1] != '(' {

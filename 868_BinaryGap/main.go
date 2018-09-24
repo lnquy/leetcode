@@ -15,8 +15,8 @@ func binaryGap(n int) int {
 
 	i := 0
 	for n != 0 {
-		if n & 1 != 0 {
-			if last1BitIdx >= 0 && i - last1BitIdx > gap {
+		if n&1 != 0 {
+			if last1BitIdx >= 0 && i-last1BitIdx > gap {
 				gap = i - last1BitIdx
 			}
 			last1BitIdx = i
@@ -35,13 +35,13 @@ func binaryGap(n int) int {
 // O(log(n))
 func binaryGap_Codility(n int) int {
 	gap, open1Bit, zeros := 0, false, 0
-	if n % 2 != 0 {
+	if n%2 != 0 {
 		open1Bit = true
 	}
 
 	for n != 0 {
 		n = n >> 1
-		if n & 1 != 0 {
+		if n&1 != 0 {
 			if !open1Bit {
 				open1Bit = true
 				zeros = 0

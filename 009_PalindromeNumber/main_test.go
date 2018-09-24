@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestIsPalindrome(t *testing.T) {
-	tcs := []struct{
-		inNum int
+	tcs := []struct {
+		inNum         int
 		outPalindrome bool
 	}{
 		{121, true},

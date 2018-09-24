@@ -5,8 +5,8 @@ import (
 )
 
 func TestLongestPalindrome(t *testing.T) {
-	tcs := []struct{
-		inStr string
+	tcs := []struct {
+		inStr  string
 		outStr string
 	}{
 		{"babad", "aba"},

@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestReverse(t *testing.T) {
-	tcs := []struct{
-		inInt int
+	tcs := []struct {
+		inInt  int
 		outInt int
 	}{
 		{123, 321},
