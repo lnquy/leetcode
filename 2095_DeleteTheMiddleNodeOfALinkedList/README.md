@@ -9,6 +9,7 @@ For n = 1, 2, 3, 4, and 5, the middle nodes are 0, 1, 1, 2, and 2, respectively.
 
 
 Example 1:
+![](https://assets.leetcode.com/uploads/2021/11/16/eg1drawio.png)
 ```
 Input: head = [1,3,4,7,1,2,6]
 Output: [1,3,4,1,2,6]
@@ -18,6 +19,7 @@ Since n = 7, node 3 with value 7 is the middle node, which is marked in red.
 We return the new list after removing this node.
 ```
 Example 2:
+![](https://assets.leetcode.com/uploads/2021/11/16/eg2drawio.png)
 ```
 Input: head = [1,2,3,4]
 Output: [1,2,4]
@@ -26,6 +28,7 @@ The above figure represents the given linked list.
 For n = 4, node 2 with value 3 is the middle node, which is marked in red.
 ```
 Example 3:
+![](https://assets.leetcode.com/uploads/2021/11/16/eg3drawio.png)
 ```
 Input: head = [2,1]
 Output: [2]
